@@ -1,6 +1,7 @@
+#!/user/bin/python
 
+# fifteen.py
 #Game of fifteen
-
 
 from random import randint
 from os import system
@@ -8,14 +9,13 @@ from sys import argv
 from time import sleep
 
 
-
 global MIN, MAX, board
 MIN = 3
 MAX = 9
 
-
-
 def great():
+""" great the user """
+	
 	system('clear')
 	"""   great the player"""
 	l = "   Welcome to GAME 15!"
@@ -25,7 +25,7 @@ def great():
 
 
 def init(alen):
-	"""initilize the board, no drawing it
+"""initilize the board, no drawing it
 	fill the board with random numbers"""
 	
 	step = 0
@@ -74,16 +74,12 @@ def drawboard(board):
 				else: 
 					print " %2s |" % j,
 	print "======" * len(board)
-		
-		
-			
-
+	
 
 def movetile(tile, board):
 	"""move the tile if posible	
-           takes tile value and board dimention"""
-	
-		
+        takes tile value and board dimention"""
+
 	for i in range(len(board)):
 		for j in range(len(board)):
 			if board[i][j] == tile:
@@ -92,8 +88,7 @@ def movetile(tile, board):
 			if board[i][j] == 0:
 				nul_i = i
 				nul_j = j
-			
-			
+
 	if tile_i - 1 == nul_i and tile_j == nul_j:
 		board[tile_i][tile_j] = 0
 		board[nul_i][nul_j] = tile
@@ -119,8 +114,7 @@ def movetile(tile, board):
 
 def won(board):
 	"""check weather the board in wining position"""
-	
-	
+
 	n = 1
 	p = len(board)*len(board) - 1
 		
