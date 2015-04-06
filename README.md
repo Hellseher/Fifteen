@@ -1,5 +1,4 @@
-# Fifteen
-* * *
+# Game Fifteen
 
 Game of Fifteen in Pyhon
 
