@@ -1,6 +1,7 @@
 # Game Fifteen
 
-Game of Fifteen in Pyhon
+Game of Fifteen in Python  
+To play the Game Fifteen you need any terminal emulator or terminal.  
 
 ### Rules
 First, make the script executable by adding permission:  
