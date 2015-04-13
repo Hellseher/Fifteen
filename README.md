@@ -3,6 +3,10 @@
 Game of Fifteen in Python  
 To play the Game Fifteen you need any terminal emulator or terminal.  
 
+### Get it
+
+    $: git clone https://github.com/Hellseher/Fifteen
+
 ### Rules
 First, make the script executable by adding permission:  
 
