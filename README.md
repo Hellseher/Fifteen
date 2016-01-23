@@ -1,20 +1,27 @@
-# Game Fifteen
+<!--
+File          : README.md
+
+Created       : Sat 23 Jan 2016 21:55:13
+Last Modified : Sat 23 Jan 2016 21:57:09
+Maintainer    : sharlatan
+-->
+
+clg
+---
+__Command Line Games
+
+# Intro #
+A small collection of comman line games, for fun.
+
+# Index #
+
+* Game Fifteen
 
 Game of Fifteen in Python  
 To play the Game Fifteen you need any terminal emulator or terminal.  
 
-### Get it
+## Get it
+*test*
+'test'
 
-    $: git clone https://github.com/Hellseher/Fifteen
-
-### Rules
-First, make the script executable by adding permission:  
-
-    $: chmod 766 ./game_fifteen.py
-
-To initialize the Game Fifteen:  
-
-    $: ./game_fifteen.py [3-9]
-
-When the game is initialized you have to align all random numbers in order from 1
-to N (N - number of generated tiles)
+    $: git clone https://github.com/Hellseher/clg
