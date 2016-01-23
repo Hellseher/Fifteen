@@ -2,13 +2,13 @@
 File          : README.md
 
 Created       : Sat 23 Jan 2016 21:55:13
-Last Modified : Sat 23 Jan 2016 21:57:09
+Last Modified : Sat 23 Jan 2016 22:07:54
 Maintainer    : sharlatan
 -->
 
 clg
 ---
-__Command Line Games
+_Command Line Games_
 
 # Intro #
 A small collection of comman line games, for fun.
@@ -17,8 +17,6 @@ A small collection of comman line games, for fun.
 
 * Game Fifteen
 
-Game of Fifteen in Python  
-To play the Game Fifteen you need any terminal emulator or terminal.  
 
 ## Get it
 *test*

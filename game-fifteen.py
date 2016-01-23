@@ -2,14 +2,14 @@
 # _*_ coding: UTF-8 _*_
 # File          :  game_fifteen.py
 # Created       :  Mon 06 Apr 2015 23:32:28
-# Last Modified :  Mon 06 Apr 2015 23:58:27
+# Last Modified :  Sat 23 Jan 2016 22:07:50
 # Maintainer    :  sharlatan, <sharlatanus@gmail.com>
 # License       :  Same as Python (GPL)
 # Credits:
 #
 """
 ..:: Description ::..
-
+Very simple implementation of Game 15, I guess you now the rull! ^.^
 
 """
 
@@ -26,6 +26,7 @@ MAX = 9
 
 
 def great_player():
+    ''' Welcome player with funny massages. '''
 
     system('clear')
     l = "   Welcome to GAME 15!"
@@ -35,7 +36,7 @@ def great_player():
 
 
 def init(alen):
-    """ initilize the board, no drawing """
+    ''' Initialize the board, no drawing '''
 
     step = 0
     A = []
@@ -45,7 +46,7 @@ def init(alen):
         if s not in A:
             A.append(s)
             step += 1
-    # initilize 2d array and fill it with numbers from A[]
+    # initialize 2d array and fill it with numbers from A[]
     B = [[0 for i in range(alen)] for j in range(alen)]
     h = 0
     for i in range(alen):
@@ -56,12 +57,12 @@ def init(alen):
 
 
 def drawboard(board):
-    """draw the board"""
+    ''' Draw the board '''
 
     for i in board:
         print "======" * len(board)
         for j in i:
-            if j == i[0]:  # the begining of the line
+            if j == i[0]:  # the beginning of the line
                 if j == 0:
                     print "|    |",
                 else:
@@ -80,7 +81,7 @@ def drawboard(board):
 
 
 def movetile(tile, board):
-    """move the tile if posible takes tile value and board dimention"""
+    '''move the tile if possible takes tile value and board dimension'''
 
     for i in range(len(board)):
         for j in range(len(board)):
@@ -111,7 +112,7 @@ def movetile(tile, board):
 
 
 def won(board):
-    """check weather the board in wining position"""
+    '''check weather the board in wining position'''
 
     n = 1
     p = len(board)*len(board) - 1
@@ -128,7 +129,7 @@ def won(board):
 def error(*argv):
     if len(argv) == 0:
         print ("Wrong initialize of the Game.")
-        print ("Usage: ./game_fifteen.py [dimention]")
+        print ("Usage: ./game_fifteen.py [dimension 3-9]")
         quit()
     elif argv[0] < MIN or argv[0] > MAX:
         print ("Board must be between %i x %i and %i x %i,\
@@ -137,7 +138,7 @@ def error(*argv):
 
 
 def main():
-    """ main function to set up the Game 15"""
+    ''' main function to set up the Game 15'''
 
     if len(sys.argv) != 2:
         error()
@@ -152,11 +153,11 @@ def main():
         drawboard(board)  # draw the current state of the board
 
         if won(board):
-            print "Congrat!"
+            print "Congrats!"
             break
-        tile = int(raw_input('Tile to move: '))  # promt for move
+        tile = int(raw_input('Tile to move: '))  # prompt for move
         if movetile(tile, board) is not True:
-            print "Illegal move... try again"
+            print "Illegal move... Try again"
             sleep(3)
 
 
